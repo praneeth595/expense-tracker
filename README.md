@@ -172,7 +172,7 @@ Database Layer (SQLModel + SQLite)
 
 * The user fills the form → amount, category, date, and description.
 * The form uses method `POST` → `/add-expense`.
-* When the form is submitted, FastAPI receives this data as a normal form request (not JSON).
+* When the form is submitted, FastAPI receives this data as form request.
 
 After the form is submitted:
 
@@ -255,9 +255,9 @@ It performs:
 
 ---
 
-#### 📍 (2) Get All Expenses
+####  (2) Get All Expenses
 
-#### 📍 (3) Get Summary
+####  (3) Get Summary
 
 ✅ Computes:
 
@@ -270,7 +270,7 @@ It performs:
 
 
 
-✅ Streams a CSV file of all (or filtered) expenses to download.
+✅ Streams a CSV file of all  expenses to download.
 
 ---
 
