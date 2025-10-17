@@ -18,9 +18,9 @@ The **Expense Tracker** is a FastAPI-based web app that helps users **record, vi
 
 ---
 ## References used to build this project
-https://www.youtube.com/watch?v=Lu8lXXlstvM&t=5137s
-https://ssojet.com/parse-and-generate-formats/parse-and-generate-csv-in-fastapi/
-ChatGpt
+*https://www.youtube.com/watch?v=Lu8lXXlstvM&t=5137s
+*https://ssojet.com/parse-and-generate-formats/parse-and-generate-csv-in-fastapi/
+*ChatGpt
 
 ## 🚀 Steps to Run the Project Locally
 
