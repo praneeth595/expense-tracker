@@ -1,34 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Expense Summary</title>
-    <link rel="stylesheet" href="/static/style.css">
+  <meta charset="UTF-8">
+  <title>Expense Summary</title>
+  <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-    <h1>📊 Expense Summary</h1>
+  <h1>Expense Summary</h1>
+  <a href="/">← Back to Home</a>
 
-    <h3>Total Spent: ₹{{ total }}</h3>
-
-    <h3>Category Breakdown:</h3>
+  <section>
+    <h2>Total: {{ total }}</h2>
+    <h3>Per Category</h3>
     <table>
-        <thead>
-            <tr>
-                <th>Category</th>
-                <th>Total Amount</th>
-            </tr>
-        </thead>
-        <tbody>
-        {% for category, amount in per_category.items() %}
-            <tr>
-                <td>{{ category }}</td>
-                <td>{{ amount }}</td>
-            </tr>
-        {% endfor %}
-        </tbody>
+      <thead><tr><th>Category</th><th>Amount</th></tr></thead>
+      <tbody>
+      {% for cat, amt in per_category.items() %}
+        <tr><td>{{ cat }}</td><td>{{ amt }}</td></tr>
+      {% endfor %}
+      </tbody>
     </table>
-
-    <br>
-    <a href="/">← Back to Home</a>
+  </section>
 </body>
 </html>

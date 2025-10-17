@@ -5,7 +5,11 @@ from ..database import engine
 from ..models import Expense
 from ..schemas import ExpenseCreate, ExpenseRead, SummaryResponse
 
+<<<<<<< HEAD
 router = APIRouter(tags=["Expenses"])
+=======
+router = APIRouter(prefix="/api", tags=["Expenses"])
+>>>>>>> ca9671d (Initial commit:Without Optional Enhancements)
 
 def get_session():
     with Session(engine) as session:

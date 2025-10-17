@@ -8,6 +8,7 @@ class ExpenseCreate(BaseModel):
     category: str
     date: date
     description: Optional[str] = None
+    
 
 
 class ExpenseRead(BaseModel):
