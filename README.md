@@ -317,22 +317,28 @@ Displays:
 expense-tracker/
 │
 ├── app/
-│   ├── main.py                → Entry point for FastAPI app
-│   ├── database.py            → Database setup and initialization
-│   ├── models.py              → Expense table schema (SQLModel)
-│   ├── schemas.py             → Request/response validation (Pydantic)
+│   ├── main.py                → Entry point for the FastAPI app (runs frontend + APIs)
+│   ├── database.py            → Configures SQLite database and initializes tables
+│   ├── models.py              → Defines the Expense model (SQLModel table schema)
+│   ├── schemas.py             → Defines data validation schemas (Pydantic)
+│   │
 │   ├── routers/
-│   │   └── expenses.py        → All backend API endpoints
-│   └── templates/
-│       ├── index.html         → Main UI (add + view expenses)
-│       └── summary.html       → Summary totals page
+│   │   └── expenses.py        → Contains all API endpoints (add, view, summary, export)
+│   │
+│   ├── templates/
+│   │   ├── index.html         → Frontend page for adding and viewing expenses
+│   │   └── summary.html       → Page displaying total and category-wise summary
+│   │
+│   └── static/
+│       └── style.css          → Stylesheet for the HTML pages (form, tables, buttons)
 │
-├── static/
-│   └── style.css              → Styling for the UI
+├── tests/
+│   └── test_summary.py        → Pytest file for verifying summary API endpoint
 │
-├── database.db                → SQLite database file (auto-created)
-├── requirements.txt           → Dependencies
-└── README.md                  → Documentation
+├── expenses.db                → SQLite database file (auto-created locally)
+├── requirements.txt           → Python dependencies list
+└── README.md                  → Complete documentation (setup, flow, endpoints)
+
 ```
 
 ---
